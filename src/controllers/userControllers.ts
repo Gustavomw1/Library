@@ -25,7 +25,7 @@ userRouter.get('/profile', async (_req: Request, res: Response) => {
     }
 });
 
-// Cadastrar
+// Cadastrar usuario
 userRouter.post('/cadastrar', async (req: Request, res: Response) => {
     const { usuario, password } = req.body;
 
