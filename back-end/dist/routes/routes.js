@@ -9,5 +9,5 @@ const routers = (0, express_1.Router)();
 routers.get('/profile', userControllers_1.default);
 routers.post('/cadastrar', userControllers_1.default);
 routers.post('/login', userControllers_1.default);
-routers.delete('/delete', userControllers_1.default);
+routers.delete('/profile/:id', userControllers_1.default);
 exports.default = routers;

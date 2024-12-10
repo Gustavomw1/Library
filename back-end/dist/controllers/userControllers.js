@@ -25,7 +25,7 @@ userRouter.get('/profile', async (_req, res) => {
         return res.status(500).json({ mensagem: 'Erro ao buscar usuario' });
     }
 });
-// Cadastrar
+// Cadastrar usuario
 userRouter.post('/cadastrar', async (req, res) => {
     const { usuario, password } = req.body;
     if (!usuario || !password) {
